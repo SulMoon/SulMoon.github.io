@@ -1,0 +1,18 @@
+{
+  "开发笔记": {
+    "图形学": [
+      "posts/图形学/shader-basics.md",
+      "posts/图形学/lighting.md"
+    ],
+    "数据结构与算法": [
+      "posts/数据结构与算法/quicksort.md",
+      "posts/数据结构与算法/mersenne-twister.md"
+    ],
+    "路过的坑": [
+      "posts/路过的坑/unity-input.md"
+    ],
+    "性能优化": [
+      "posts/性能优化/batching.md"
+    ]
+  }
+}
