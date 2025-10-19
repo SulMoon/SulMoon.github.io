@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>菜鸟教程(runoob.com)</title>
-</head>
-<body>
-    <h1>我的第一个标题</h1>
-    <p>我的第一个段落。</p>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>SulMoon</title>
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="CSS/index.css">
+    </head>
+    <body>
+        <div class="layout">
+            <nav class="sidebar" aria-label="侧边目录">
+                <ol class="menu">
+                    <li>
+                        <button class="parent" aria-expanded="false">1. 第一章</button>
+                        <ol class="sublist hidden">
+                            <li><button class="child" data-title="第一章 · 第一节" data-content="这是第一章第一节的详细内容。">1.1 第一节</button></li>
+                            <li><button class="child" data-title="第一章 · 第二节" data-content="这是第一章第二节的详细内容。">1.2 第二节</button></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <button class="parent" aria-expanded="false">2. 第二章</button>
+                        <ol class="sublist hidden">
+                            <li><button class="child" data-title="第二章 · 第一节" data-content="第二章第一节说明内容。">2.1 第一节</button></li>
+                            <li><button class="child" data-title="第二章 · 第二节" data-content="第二章第二节说明内容。">2.2 第二节</button></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <button class="parent" aria-expanded="false">3. 第三章</button>
+                        <ol class="sublist hidden">
+                            <li><button class="child" data-title="第三章 · 第一节" data-content="第三章第一节的内容示例。">3.1 第一节</button></li>
+                        </ol>
+                    </li>
+                </ol>
+            </nav>
+
+            <main class="content" id="main-content">
+                <h2 id="content-title">欢迎</h2>
+                <div id="content-body">点击左侧的子条目以在此处显示内容。</div>
+            </main>
+        </div>
+
+        <script src="JavaScript/index.js" defer></script>
+    </body>
 </html>

@@ -1,0 +1,76 @@
+:root{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, 'Noto Sans', sans-serif;
+    color: #0f172a;
+}
+body{
+    margin: 0;
+    background: #f8fafc;
+}
+.layout{
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 100vh;
+}
+.sidebar{
+    background: #ffffff;
+    border-right: 1px solid #e6eef7;
+    padding: 16px;
+}
+.content{
+    padding: 24px;
+}
+.menu{
+    counter-reset: section;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu > li{
+    margin-bottom: 8px;
+}
+.parent{
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: 0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.parent:hover{
+    background: #f1f5f9;
+}
+.parent[aria-expanded="true"]{
+    background: #e6f0ff;
+}
+.sublist{
+    margin: 6px 0 0 18px;
+    padding-left: 12px;
+    border-left: 2px solid transparent;
+}
+.sublist.hidden{
+    display: none;
+}
+.sublist li{
+    margin: 6px 0;
+}
+.child{
+    background: transparent;
+    border: 0;
+    padding: 6px 10px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.child:hover{
+    background: #eef2ff;
+}
+#content-title{
+    margin-top: 0;
+}
+
+.child.active{
+    background: #e6f0ff;
+}
