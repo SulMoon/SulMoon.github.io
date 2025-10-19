@@ -74,3 +74,22 @@ body{
 .child.active{
     background: #e6f0ff;
 }
+
+/* 顶栏 header */
+.site-header{
+    background: #0f172a;
+    color: #ffffff;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.site-title{
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+}
+.site-subtitle{
+    font-size: 0.875rem;
+    opacity: 0.85;
+}
