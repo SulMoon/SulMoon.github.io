@@ -1,14 +1,14 @@
-@font-face {
+/* @font-face {
   font-family: "LiuJianMaoCao";
   src: 
-    url("/fonts/ljmc/LiuJianMaoCao-Regular.ttf") format("truetype");
-}
+    url("../fonts/ljmc/LiuJianMaoCao-Regular.ttf") format("truetype");
+} */
 
-/* @font-face {
+@font-face {
   font-family: "PingFangYouth";
   src: 
-    url("/fonts/平方青春体.ttf") format("truetype");
-} */
+    url("../fonts/平方青春体.ttf") format("truetype");
+}
 
 * {
   padding: 0;
@@ -35,5 +35,6 @@ body {
 
 
 .title{
-  font-family: "LiuJianMaoCao";
+  font-family: "PingFangYouth";
+  font-size: 50px;
 }
