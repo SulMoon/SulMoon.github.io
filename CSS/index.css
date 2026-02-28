@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "LiuJianMaoCao";
+  src: 
+    url("/fonts/ljmc/LiuJianMaoCao-Regular.ttf") format("truetype");
+}
+
+/* @font-face {
+  font-family: "PingFangYouth";
+  src: 
+    url("/fonts/平方青春体.ttf") format("truetype");
+} */
+
 * {
   padding: 0;
   margin: 0;
@@ -21,9 +33,7 @@ body {
   align-items: center;
 }
 
-@import url("https://fontsapi.zeoseven.com/508/main/result.css");
-@import url("https://fontsapi.zeoseven.com/102/main/result.css");
+
 .title{
-  font-family: "pingfangqignchunti";
-  font-weight: normal;
+  font-family: "LiuJianMaoCao";
 }
