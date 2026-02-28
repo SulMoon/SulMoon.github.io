@@ -13,7 +13,7 @@
 //     }
 // }
 
-fetch('../datas/md/file.md')
+fetch('./datas/md/file.md')
 .then(res => res.text())
 .then(md => { 
     const html = marked.parse(md); 
