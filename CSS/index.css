@@ -4,17 +4,17 @@
     url("../fonts/ljmc/LiuJianMaoCao-Regular.ttf") format("truetype");
 } */
 
-@font-face {
+/* @font-face {
   font-family: "PingFangYouth";
   src: 
-    url("../fonts/平方青春体.ttf") format("truetype");
+    url("../fonts/pfyouth/平方青春体.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "DZT";
   src: 
     url("../fonts/dzt/FashionBitmap16_0.092.ttf") format("truetype");
-}
+} */
 
 * {
   padding: 0;
