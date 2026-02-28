@@ -6,6 +6,7 @@ rawFile.onreadystatechange = function () {
     if (rawFile.readyState === 4) {
         if (rawFile.status === 200 || rawFile.status == 0) {
             var allText = rawFile.responseText;
+            console.log(allText);
             document.getElementById("markdown").innerHTML = marked(allText);
             // document.getElementById("markdown").innerHTML = marked.parse(rawtext);
         }
