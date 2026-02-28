@@ -3,87 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <title>开发笔记</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- UI styles -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
   <link rel="stylesheet" href="CSS/index.css" />
-  <!-- Markdown renderer -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <!-- Fuzzy search -->
-  <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
-  <!-- Syntax highlight -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 </head>
 <body>
-  <div class="layout">
-    <!-- Sidebar -->
-    <aside class="sidebar" aria-label="侧边导航">
-      <div class="brand">
-        <div class="logo">🧭</div>
-        <div class="title">开发笔记</div>
-      </div>
-
-      <!-- Search -->
-      <div class="search">
-        <input id="search-input" type="search" placeholder="搜索文档…" aria-label="搜索文档" />
-        <ul id="search-results" class="search-results" aria-label="搜索结果"></ul>
-      </div>
-
-      <!-- Accordion nav -->
-      <nav class="accordion-nav">
-        <ul class="accordion" role="tree">
-          <!-- 主页 -->
-          <li class="accordion-item" role="treeitem">
-            <a class="flat-link" href="#" id="home-link">主页</a>
-          </li>
-
-          <!-- 开发笔记（动态分类） -->
-          <li class="accordion-item" role="treeitem" aria-expanded="true">
-            <button class="accordion-trigger" aria-expanded="true" aria-controls="panel-devnotes">
-              <span class="label">开发笔记</span>
-              <span class="chevron" aria-hidden="true"></span>
-            </button>
-            <ul id="panel-devnotes" class="accordion-panel" role="group">
-              <!-- 二级分类列表（JS注入） -->
-              <div class="panel-placeholder">加载分类…</div>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-
-      <footer class="sidebar-footer">
-        <div class="muted">© 飞 · 笔记站</div>
-      </footer>
-    </aside>
-
-    <!-- Content -->
-    <main class="content" id="content" aria-live="polite">
-      <section class="welcome" id="home-view">
-        <h1>欢迎来到主页</h1>
-        <p>在左侧选择「开发笔记」中的分类与文档或使用搜索快速跳转。</p>
-        <div class="cards">
-          <div class="card">
-            <h3>图形学</h3>
-            <p>着色器、渲染流程、光照、材质、GPU 性能技巧。</p>
-          </div>
-          <div class="card">
-            <h3>数据结构与算法</h3>
-            <p>经典算法与工程化实现、复杂度与实战案例。</p>
-          </div>
-          <div class="card">
-            <h3>路过的坑</h3>
-            <p>踩坑记录与规避策略，防止再次掉坑。</p>
-          </div>
-          <div class="card">
-            <h3>性能优化</h3>
-            <p>分析、定位与优化方法论与工具链。</p>
-          </div>
-        </div>
-      </section>
-      <article id="doc-view" class="doc hidden"></article>
-    </main>
+  <div class="body-top">
+    <h1 class="title">SulMoon的知识库</h1>
   </div>
 
+  <div class="body-bottom">
+
+  </div>
   <script src="JavaScript/index.js"></script>
 </body>
 </html>
