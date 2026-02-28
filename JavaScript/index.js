@@ -17,5 +17,6 @@ fetch('./datas/md/file.md')
 .then(res => res.text())
 .then(md => { 
     const html = marked.parse(md); 
+    console.log(html);
     document.getElementById('markdown-content').innerHTML = html; 
 });
