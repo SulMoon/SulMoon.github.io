@@ -19,4 +19,5 @@ fetch('./datas/md/file.md')
     const html = marked.parse(md); 
     console.log(html);
     document.getElementById('markdown-content').innerHTML = html; 
+    hljs.highlightAll();
 });

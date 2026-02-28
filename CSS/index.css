@@ -74,6 +74,9 @@ body {
 }
 
 .markdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 375px;
   height: 100vh;
   width: calc(100vw - 375px);
@@ -84,4 +87,17 @@ body {
   /* border: 0px solid #ffffff;
   border-radius: 16px; */
   /* box-shadow: 0 5px 10px rgba(0,0,0,0.05); */
+}
+.markdown-body{
+  padding: 15px;
+  width: 794px;
+  height: 1123px;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  border: 0px solid #ffffff;
+  border-radius: 16px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
 }
