@@ -27,7 +27,7 @@
         <ul class="page-list {{ cate[0] }} {% unless page.url contains cate[0] %}hide{% endunless %}">
             {% for po in cate[1] %}
             <li class="directory__item {% if page.url == po.url %}directory__item--active{% endif %}">
-                <a href="{{ po.url }}">{{ po.title }}</a>
+                <a href="/game-dev-site{{ po.url }}">{{ po.title }}</a>
             </li>
             {% endfor %}
         </ul>
