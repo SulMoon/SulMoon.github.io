@@ -17,16 +17,36 @@ title: LZF's Game Dev Blog
 email: cloudlzf@163.com
 description: >- # this means to ignore newlines until "baseurl:"
   记录游戏开发过程中的一些问题和解决方案，分享一些游戏开发相关的知识和经验。
-baseurl: "/game-dev-site" # the subpath of your site, e.g. /blog
+#baseurl: "/game-dev-site" # the subpath of your site, e.g. /blog
 url: "https://sulmoon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username:  
+twitter_username:
+github_username:
 
 # Build settings
+# markdown: kramdown
 markdown: kramdown
+kramdown:
+input: GFM
+syntax_highlighter: rouge
+highlighter: rouge
+
 theme: minima
 plugins:
   - jekyll-feed
+
+
+
+# 要想if file.image，就得在这里添加配置，表示assets/img文件夹都是image
+# {% for file in site.static_files %}
+#     {% if file.image %}
+#       <img src="{{file.path}}" alt="file.name">
+#     {% endif %}
+# {% endfor %}
+#defaults:
+#  - scope:
+#      path: "assets/img"
+#    values:
+#      image: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

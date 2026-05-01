@@ -1,8 +1,12 @@
 ---
 layout: post
-title:  "Doc Test"
+title:  "ScriptableObject相关"
 date:   2026-03-18 22:51:27 +0800
-categories: jekyll update
+categories: unity
+# permalink是一个永久性的链接
+# permalink: "/unity-dev/ScriptableObject"
+permalink: /:categories/:title
+tag: Unity开发
 ---
 
 ## 1.ScriptableObject使用方法

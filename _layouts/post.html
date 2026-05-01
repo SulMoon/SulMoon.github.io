@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+
+    {% include sidebar.html %}
+    {% include topbar.html %}
+
+    <div class="post-content">
+        <h1 style="font-family: BoutiqueBitmap9x9 3D; font-weight: normal;">{{ page.title }}</h1>
+        <hr>
+        {{ content }}
+    </div>
+
+
+</body>
+
+</html> 

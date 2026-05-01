@@ -1,0 +1,216 @@
+@import url("https://fontsapi.zeoseven.com/790/main/result.css");
+
+
+/* Rouge 代码块美化 */
+.highlight {
+    /* 内边距，让代码不贴边 */
+    padding: 7px 10px;
+    /* 圆角，可选 */
+    border-radius: 3px;
+    /* 上下留白 */
+    margin: 1em 0;
+    /* 行间距 */
+    line-height: 1.6
+}
+
+.highlight pre {
+    /* 避免 pre 自己再加额外间距 */
+    margin: 0;
+    /* 使用 highlight 的背景色 */
+    background: inherit;
+}
+
+/* --------------- 通用 ---------------*/
+
+/* 文本居中 */
+.text-align {
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+}
+
+.vertical {
+    writing-mode: vertical-rl;
+    /* 竖排，从上到下，从右到左 */
+    text-orientation: upright;
+    /* 让每个字保持直立 */
+    letter-spacing: 4px;
+}
+
+.hide {
+    display: none;
+}
+
+/* --------------- home.html --------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
+    height: 100vh;
+    /* 水平居中 */
+    justify-content: center;
+    /* align-items: center; */
+
+    background-color: #B6B9BD;
+}
+
+/* --------------- sidebar.html --------------- */
+.sidebar {
+    position: fixed;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+
+    width: 300px;
+    height: 100vh;
+
+    /* border: 2px solid black; */
+}
+
+.sidebar-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 60px;
+    height: 100vh;
+
+    padding: 0;
+    background-color: #eff3f6;
+    border-right: 2px solid #CED2D6;
+}
+
+.gohome a {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    text-decoration: none;
+
+    height: 50px;
+
+    color: black;
+}
+
+.gohome,
+.categories__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: auto;
+
+    padding: 10px;
+    /* font-weight: bold; */
+    border-bottom: 2px solid #CED2D6;
+
+    font-family: "BoutiqueBitmap9x9 3D";
+    font-weight: normal;
+
+    transition: all 0.2s;
+}
+
+.gohome:hover,
+.categories__item:hover {
+    cursor: grabbing;
+    border-left: 5px solid #5AE8F0;
+    color: #5AE8F0;
+}
+
+.categories__item--active {
+    border-left: 5px solid #5AE8F0;
+    color: #5AE8F0;
+}
+
+.sidebar-directory {
+    width: 250px;
+    height: 100vh;
+}
+
+.page-list {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 10px 15px;
+    background-color: #E4E8EB;
+
+    border-width: 15px 2px 15px 0;
+    border-color: #CED2D6;
+    border-style: solid;
+}
+
+.page-list.hide {
+    display: none;
+}
+
+.directory__item {
+    list-style: none;
+
+    padding: 6px 3px;
+    margin: 2px 0;
+
+    transition: all .3s ease;
+}
+
+.directory__item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    text-decoration: none;
+    color: #7e7e7e;
+    transition: all .3s ease;
+}
+
+.directory__item:hover,
+.directory__item--active {
+    transform: scale(1.05);
+    background-color: #DCE0E3;
+}
+
+.directory__item a:hover,
+.directory__item--active a {
+    color: #5AE8F0;
+}
+
+
+.topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 675px;
+    height: 75px;
+
+    background-color: #eff3f6;
+    border-radius: 5px 5px 5px 75px;
+}
+
+.post-content {
+    margin-top: 125px;
+
+    width: 230mm;
+    height: auto;
+    min-height: 297mm;
+
+    padding: 20px;
+    background-color: #E6ECF0;
+    border-radius: 25px;
+}
+
+.post-content li{
+    margin-left: 35px;
+}

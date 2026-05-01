@@ -1,0 +1,37 @@
+<!-- 可通过配置文件关联图标 -->
+<nav class="sidebar">
+    <!-- 分类 -->
+    <div class="sidebar-categories">
+        <div class="gohome"><a href="{{site.url}}">Home</a></div>
+        <ul class="categories">
+            <li class="categories__item vertical 
+            {% if page.url contains 'graphics' %}categories__item--active{% endif %}" title="图形学"
+                data-category="graphics">图形学</li>
+            <li class="categories__item vertical 
+            {% if page.url contains 'unity' %}categories__item--active{% endif %}" title="Unity开发"
+                data-category="unity">Unity</li>
+            <li class="categories__item vertical 
+            {% if page.url contains 'data-structures' %}categories__item--active{% endif %}" title="数据结构"
+                data-category="data-structures">数据结构</li>
+            <li class="categories__item vertical 
+            {% if page.url contains 'algorithms' %}categories__item--active{% endif %}" title="算法"
+                data-category="algorithms">算法</li>
+        </ul>
+    </div>
+
+
+    <!-- 目录 -->
+    <div class="sidebar-directory">
+
+        {% for cate in site.categories %}
+        <ul class="page-list {{ cate[0] }} {% unless page.url contains cate[0] %}hide{% endunless %}">
+            {% for po in cate[1] %}
+            <li class="directory__item {% if page.url == po.url %}directory__item--active{% endif %}">
+                <a href="{{ po.url }}">{{ po.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
+
+</nav>

@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "图形学基础"
+date:   2026-03-18 22:51:27 +0800
+categories: graphics
+# permalink是一个永久性的链接
+# permalink: "/unity-dev/ScriptableObject"
+permalink: /:categories/:title
+tag: Unity开发
+---
+
+## 1.渲染管线
+- ### 普通创建
+- ### 用代码去创建SO
