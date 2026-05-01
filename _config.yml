@@ -17,8 +17,8 @@ title: LZF's Game Dev Blog
 email: cloudlzf@163.com
 description: >- # this means to ignore newlines until "baseurl:"
   记录游戏开发过程中的一些问题和解决方案，分享一些游戏开发相关的知识和经验。
-#baseurl: "/game-dev-site" # the subpath of your site, e.g. /blog
-url: "https://sulmoon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "/game-dev-site" # the subpath of your site, e.g. /blog
+url: "https://sulmoon.github.io/game-dev-site/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
 

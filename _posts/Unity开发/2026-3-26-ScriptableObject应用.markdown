@@ -5,7 +5,7 @@ date:   2026-03-18 22:51:27 +0800
 categories: unity
 # permalink是一个永久性的链接
 # permalink: "/unity-dev/ScriptableObject"
-permalink: /game-dev-site/:categories/:title
+permalink: /:categories/:title
 ---
 
 ## 1.ScriptableObject使用方法
