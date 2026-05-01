@@ -6,7 +6,6 @@ categories: unity
 # permalink是一个永久性的链接
 # permalink: "/unity-dev/ScriptableObject"
 permalink: /:categories/:title
-tag: Unity开发
 ---
 
 ## 1.ScriptableObject使用方法
