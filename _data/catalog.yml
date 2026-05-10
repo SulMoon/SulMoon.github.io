@@ -1,9 +1,15 @@
 
-- name: "unity-graphics"
-  display: "Unity图形学"
+- name: "graphics"
+  display: "图形学"
 
-- name: ""
-  display: ""
+- name: "unity"
+  display: "Unity"
 
-- name: ""
-  display: ""
+- name: "data-structures"
+  display: "数据结构"
+
+- name: "algorithms"
+  display: "算法"
+
+- name: "test"
+  display: "其他"

@@ -4,18 +4,12 @@
     <div class="sidebar-categories">
         <div class="gohome"><a href="{{site.url}}/game-dev-site">Home</a></div>
         <ul class="categories">
-            <li class="categories__item vertical 
-            {% if page.url contains 'graphics' %}categories__item--active{% endif %}" title="图形学"
-                data-category="graphics">图形学</li>
-            <li class="categories__item vertical 
-            {% if page.url contains 'unity' %}categories__item--active{% endif %}" title="Unity开发"
-                data-category="unity">Unity</li>
-            <li class="categories__item vertical 
-            {% if page.url contains 'data-structures' %}categories__item--active{% endif %}" title="数据结构"
-                data-category="data-structures">数据结构</li>
-            <li class="categories__item vertical 
-            {% if page.url contains 'algorithms' %}categories__item--active{% endif %}" title="算法"
-                data-category="algorithms">算法</li>
+            {% for cata in site.data.catalog %}
+            {% if site.categories contains cata.name %}
+            <li class="categories__item vertical {% if page.url contains cata.name %}categories__item--active{% endif %}" title="{{ cata.display }}" 
+            data-category="{{ cata.name }}"> {{ cata.display }} </li>
+            {% endif %}
+            {% endfor %}
         </ul>
     </div>
 

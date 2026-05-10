@@ -189,8 +189,7 @@ body {
 }
 
 
-.topbar {
-    position: fixed;
+/* .topbar {
     top: 0;
     right: 0;
 
@@ -199,7 +198,7 @@ body {
 
     background-color: #eff3f6;
     border-radius: 5px 5px 5px 75px;
-}
+} */
 
 .post-content {
     margin-top: 125px;
