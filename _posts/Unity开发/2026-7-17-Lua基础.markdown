@@ -1,0 +1,89 @@
+---
+layout: post
+title:  "Lua基础"
+date:   2026-07-17 14:55:00 +0800
+categories: unity
+# permalink是一个永久性的链接
+# permalink: "/unity-dev/ScriptableObject"
+permalink: /:categories/:title
+---
+
+## Lua基础
+- ### 数据类型
+| 类型 | 描述 |
+|----|----|
+| nil | 表示一个无效值，还可以起到删除作用。注意 type(x)=="nil"，它返回的是 string 类型 |
+| boolean | 布尔，Lua 把 false 和 nil 看作是 false，其他的都为 true，数字 0 也是 true: |
+| number | 双精度浮点数 + 整数类型(Lua5.3) |
+| string | 字符串，除了"hello"，也可以[[hello]]，#"hello"获取长度 |
+| function | 函数 |
+| userdata | 任意存储在变量中的C数据结构 |
+| thread | 表示执行的独立线路，用于执行协同程序 |
+| table | 是一个“关联数组”(associative arrays)，可以通过它模拟类 |
+- ### 变量
+```csharp
+  a = 5               // 全局变量
+  local b = 6         // 局部变量
+
+  function test ()
+    c = 5             // 全局变量
+    local d = 6       // 局部变量
+  end
+
+  print (c, d)        // 5 nil
+  do
+    local a = 6       // 局部变量
+    b = 7             // 局部变量重新赋值
+  end
+
+  a,b = b,a           // 交换a,b的值
+  print (a, b)        // 6 5
+```
+- ### 循环
+```csharp
+  // while 循环
+  while(condition)
+  do
+   statements
+  end
+
+  // for循环。exp是可以不写的
+  for var=exp1,exp2,exp3 do  
+    <执行体>  
+  end
+  // 递减
+  for i=10;1;-1 do
+  end
+  // 累加
+  for i=0;10 do
+  end
+
+  // repeat循环
+  local i = 5
+  repeat
+    i = i - 1
+  until(i < 0)
+```
+- ### 流程控制
+```csharp
+  a = 10
+  if (a == 10)
+  then
+    print("a是10")
+  elseif (a == 20)
+  then
+    print("a是20")
+  else
+    print("a不是10也不是20")
+  end
+```
+- ### 函数
+```csharp
+  // Lua的函数支持多返回值
+  function max(num1, num2)
+    if (num1 > num2) then
+      return num1, num1 - num2
+    end
+    return num2, num2 - num1
+  end
+```
